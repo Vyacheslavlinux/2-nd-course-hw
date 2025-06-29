@@ -85,6 +85,7 @@
             text-align: center;
             line-height: 66px;
             cursor: pointer;
+            text-decoration: none;
     }
     &__button:hover {
                 color: #000000;
@@ -444,13 +445,13 @@ html {
     .star1-12 {
         display: none;
     }
-    .star-mob1 {
+    /*.star-mob1 {
         position: absolute;
         top: -90px;
         left: 220px;
         border: #202027;
         
-    }
+    }*/
     .star-mob2 {
         position: absolute;
         top: 97px;
@@ -466,7 +467,11 @@ html {
         height: 700px;
         background-color: #E1ff8f;
         background-position: center;
-        background-size: cover;
+        /*background-size: cover;*/
+        background-image: url(img/star-mob1.png);
+        background-repeat: no-repeat;
+        background-position: 265px -100px;
+        
     }
     .content-mob {
     max-width: 343px;
@@ -504,11 +509,10 @@ html {
             border-radius: 60px;
             font: inherit;
             font-size: 16px;
-            line-height: 142%;
             color: #FFFFFF;
             background-color: #000000;
             text-align: center;
-            line-height: 66px;
+            line-height: 55px;
             cursor: pointer;
             text-decoration: none;
         }
@@ -543,6 +547,7 @@ html {
     &__img {
         max-width: 343px;
         border-radius: 27px 27px 0 0;
+        width: 100%;
     }
     }
     .game-content {
@@ -568,18 +573,18 @@ html {
     &__button {
             display: block;
             margin: 32px auto 0;
-            width: 285px;
+            max-width: 285px;
+            width: 100%;
             height: 55px;
             border: 1px solid #000000;
             box-sizing: border-box;
             border-radius: 60px;
             font: inherit;
             font-size: 16px;
-            line-height: 142%;
             color: #FFFFFF;
             background-color: #000000;
             text-align: center;
-            line-height: 66px;
+            line-height: 55px;
             cursor: pointer;
             text-decoration: none;  
     }
@@ -600,5 +605,8 @@ html {
     .minigames-mob-content{
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .firstpage-mob {
+        background-position: 215px -100px;
     }
 }  
