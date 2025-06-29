@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.body {
+    font-family: "Montserrat", sans-serif;
+}
 
 
 .firstpage {
@@ -10,6 +13,15 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+}
+.firstpage-mob {
+    display: none;
+}
+.minigames-mob {
+    display: none;
+}
+.footer-mob {
+    display: none;
 }
 .group {
     position: absolute;
@@ -49,6 +61,7 @@
             font-weight: 700;
             font-size: 64px;
             line-height: 78px;
+            
             text-align: left;
     }
     &__p1 {
@@ -72,6 +85,7 @@
             text-align: center;
             line-height: 66px;
             cursor: pointer;
+            text-decoration: none;
     }
     &__button:hover {
                 color: #000000;
@@ -85,11 +99,49 @@ html {
 }
 .games {
     padding-top: 94px;
-    height: 1242px;
+    height: 1470px;
     background-color: #000000;
-    
-    
 }
+.games-text {
+    height: 198px;
+    box-sizing: border-box;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+    margin-bottom: 72px; 
+    &__h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 24px;
+    }
+    &__p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(255, 255, 255);
+    }
+}
+
+
+.star1-11 {
+    position: absolute;
+    left: 25px;
+    top: 1570px;
+} 
+.star1-12 {
+    position: absolute;
+    left: 40px;
+    top: 1622px;
+} 
+.star1-1 {
+    position: absolute;
+    right: -143px;
+    top: 877px;
+    z-index: 0;
+}     
+
+
 .block {
     height: 1056px;
     margin-bottom: 92px;
@@ -269,8 +321,10 @@ html {
 }
 .card5 {
     cursor: pointer;
+    z-index: 1;
     &__img{
         border-radius: 30px 30px 0 0;
+        
     }
     &__title {
         height: 159px;
@@ -339,3 +393,220 @@ html {
 .card6:hover {
     transform: scale(1.06349);    
 }
+@media (max-width: 1024px) {
+.games {
+    padding-left: calc(50% - 834px/2);
+    padding-right: calc(50% - 834px/2); 
+    height: 2000px;         
+}  
+.column1 {
+   grid-column: span 3; 
+   flex-direction: row;
+}
+.column2 {
+   grid-column: span 3; 
+   flex-direction: row;
+}
+.column3 {
+   grid-column: span 3; 
+   flex-direction: row;
+}
+.card2 {
+    z-index: 1;
+}
+}
+@media (max-width: 768px) {
+    .content {
+        left: 0px;
+    }
+    .column1 {
+        gap: 12px;
+    }
+    .column2 {
+        gap: 12px;
+    }
+    .column3 {
+        gap: 12px;
+    }
+}
+@media (max-width: 425px) {
+    .firstpage {
+   display: none;
+    }
+    .games {
+        display: none;
+    }
+    .star1-1 {
+        display: none;
+    }
+    .star1-11 {
+        display: none;
+    }
+    .star1-12 {
+        display: none;
+    }
+    /*.star-mob1 {
+        position: absolute;
+        top: -90px;
+        left: 220px;
+        border: #202027;
+        
+    }*/
+    .star-mob2 {
+        position: absolute;
+        top: 97px;
+        left: 37px;
+    }
+    .star-mob3 {
+        position: absolute;
+        top: 64px;
+        left: 91px;
+    }
+    .firstpage-mob {
+        display: block;
+        height: 700px;
+        background-color: #E1ff8f;
+        background-position: center;
+        /*background-size: cover;*/
+        background-image: url(img/star-mob1.png);
+        background-repeat: no-repeat;
+        background-position: 265px -100px;
+        
+    }
+    .content-mob {
+    max-width: 343px;
+    padding-left: 17px;
+    padding-right: 16px; 
+    padding-top: 147px;
+    
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    gap: 24px;
+    &__h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+            width: 262px;
+            text-align: center;
+            margin: 0 auto;
+    }
+    &__p1 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            text-align: center;
+            width: 296px;
+            margin: 0 auto;
+    }
+    &__button {
+            margin: 12px auto 0;
+            width: 285px;
+            height: 55px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 60px;
+            font: inherit;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: #000000;
+            text-align: center;
+            line-height: 55px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    }
+    .minigames-mob {
+        display: block;
+        height: 3740px;
+        background-color: #202027;
+    }
+    .minigames-mob-content {
+    padding-top: 48px;   
+    box-sizing: border-box;
+    padding-left: 41px;
+    padding-right: 41px;
+    margin-bottom: 10px; 
+    &__h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 48px; 
+    }   
+    }
+
+    .minigame {
+    cursor: pointer;
+    max-width: 343px;
+    border-radius: 27px;
+    background-color: #FFFFFF;
+    margin-bottom: 24px;
+    &__img {
+        max-width: 343px;
+        border-radius: 27px 27px 0 0;
+        width: 100%;
+    }
+    }
+    .game-content {
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        padding: 29px 29px 32px;
+       border-radius: 0 0 27px 27px;
+    
+    &__header {    
+    
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #202027;
+    margin-bottom: 16px;
+    } 
+    &__desc  {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000;  
+    }
+    &__button {
+            display: block;
+            margin: 32px auto 0;
+            max-width: 285px;
+            width: 100%;
+            height: 55px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 60px;
+            font: inherit;
+            font-size: 16px;
+            color: #FFFFFF;
+            background-color: #000000;
+            text-align: center;
+            line-height: 55px;
+            cursor: pointer;
+            text-decoration: none;  
+    }
+    }
+    .footer-mob {
+        display: block;
+        height: 100px;
+        background-color: #BCEC30;
+        text-align: center;
+        &__p {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 100px;
+        }
+    }
+} 
+@media (max-width: 375px) {
+    .minigames-mob-content{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .firstpage-mob {
+        background-position: 215px -100px;
+    }
+}  
