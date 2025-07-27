@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .firstpage-mob {
@@ -51,29 +53,30 @@
   top: 69px;
 }
 
-.content {
+.header {
   position: absolute;
-  left: 120px;
   top: 196px;
   width: 769px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 24px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
-.content__h1 {
+.header__h1 {
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
   text-align: left;
 }
-.content__p1 {
+.header__p1 {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   text-align: left;
 }
-.content__button {
+.header__button {
   margin-top: 24px;
   width: 247px;
   height: 66px;
@@ -90,7 +93,7 @@
   cursor: pointer;
   text-decoration: none;
 }
-.content__button:hover {
+.header__button:hover {
   color: #000000;
   background-color: #ffffff;
   transition: 1s;
@@ -101,9 +104,12 @@ html {
 }
 
 .games {
+  position: relative;
   padding-top: 94px;
   height: 1470px;
   background-color: #202027;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .games-text {
@@ -130,36 +136,39 @@ html {
 .star1-11 {
   position: absolute;
   left: 25px;
-  top: 1570px;
+  top: 770px;
 }
 
 .star1-12 {
   position: absolute;
   left: 40px;
-  top: 1622px;
+  top: 822px;
 }
 
 .star1-1 {
   position: absolute;
   right: -143px;
-  top: 877px;
+  top: 77px;
   z-index: 0;
 }
 
 .block {
-  height: 1056px;
+  min-height: 1056px;
   margin-bottom: 92px;
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .column1 {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
   font-size: 0;
 }
@@ -168,6 +177,7 @@ html {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
   font-size: 0;
 }
@@ -176,6 +186,7 @@ html {
   grid-column: span 1;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
   font-size: 0;
 }
@@ -443,10 +454,12 @@ html {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 30px 0 0 30px;
-  padding-top: 48px;
   padding-left: 48px;
   padding-right: 48px;
   box-sizing: border-box;
+  padding-bottom: 48px;
+  min-height: 250px;
+  height: 100%;
 }
 .minigames-card-content__h3 {
   font-weight: 700;
@@ -487,6 +500,8 @@ html {
   max-width: 600px;
   width: 100%;
   border-radius: 0 30px 30px 0;
+  min-height: 250px;
+  height: 100%;
 }
 
 .minigames-card-content1 {
@@ -499,6 +514,9 @@ html {
   padding-left: 48px;
   padding-right: 48px;
   box-sizing: border-box;
+  padding-bottom: 48px;
+  min-height: 250px;
+  height: 100%;
 }
 
 .minigames-card-img1 {
@@ -506,6 +524,8 @@ html {
   max-width: 600px;
   width: 100%;
   border-radius: 30px 0 0 30px;
+  min-height: 250px;
+  height: 100%;
 }
 
 .footer {
@@ -521,6 +541,16 @@ html {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    padding-left: calc(50% - 417px);
+    padding-right: calc(50% - 417px);
+    max-width: 768px;
+    width: 100%;
+  }
+  .header__h1 {
+    font-weight: 700;
+    font-size: 52px;
+  }
   .games {
     padding-left: calc(50% - 417px);
     padding-right: calc(50% - 417px);
@@ -541,6 +571,30 @@ html {
   .card2 {
     z-index: 1;
   }
+  .card1__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card2__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card3__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card4__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card5__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card6__img {
+    max-width: 314px;
+    width: 100%;
+  }
   .minigames {
     padding-left: calc(50% - 417px);
     padding-right: calc(50% - 417px);
@@ -551,10 +605,10 @@ html {
     width: 100%;
   }
   .minigames-card-content {
-    padding-top: 12px;
+    padding-top: 48px;
   }
   .minigames-card-content1 {
-    padding-top: 12px;
+    padding-top: 48px;
   }
   .minigames-card-content__h3 {
     font-size: 32px;
@@ -574,7 +628,7 @@ html {
   }
 }
 @media (max-width: 768px) {
-  .content {
+  .header {
     left: 0px;
   }
   .column1 {
@@ -599,14 +653,16 @@ html {
     line-height: 20px;
   }
 }
+@media (max-width: 650px) {
+  .games {
+    display: none;
+  }
+}
 @media (max-width: 425px) {
   .firstpage {
     display: none;
   }
   .minigames {
-    display: none;
-  }
-  .games {
     display: none;
   }
   .star1-1 {
@@ -645,7 +701,7 @@ html {
     background-repeat: no-repeat;
     background-position: 265px -100px;
   }
-  .content-mob {
+  .header-mob {
     width: 100%;
     padding-top: 147px;
     display: flex;
@@ -654,7 +710,7 @@ html {
     flex-wrap: wrap;
     gap: 24px;
   }
-  .content-mob__h1 {
+  .header-mob__h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
@@ -662,7 +718,7 @@ html {
     text-align: center;
     margin: 0 auto;
   }
-  .content-mob__p1 {
+  .header-mob__p1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -670,7 +726,7 @@ html {
     width: 296px;
     margin: 0 auto;
   }
-  .content-mob__button {
+  .header-mob__button {
     margin: 12px auto 0;
     width: 285px;
     height: 55px;
