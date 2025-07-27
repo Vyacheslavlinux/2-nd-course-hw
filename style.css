@@ -193,13 +193,9 @@ html {
 
 .card1 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
 }
 .card1__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card1__title {
   height: 159px;
@@ -235,13 +231,9 @@ html {
 
 .card2 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
 }
 .card2__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card2__title {
   height: 237px;
@@ -277,13 +269,9 @@ html {
 
 .card3 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
 }
 .card3__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card3__title {
   height: 198px;
@@ -319,13 +307,9 @@ html {
 
 .card4 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
 }
 .card4__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card4__title {
   height: 198px;
@@ -361,14 +345,10 @@ html {
 
 .card5 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
   z-index: 1;
 }
 .card5__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card5__title {
   height: 159px;
@@ -404,13 +384,9 @@ html {
 
 .card6 {
   cursor: pointer;
-  max-width: 314px;
-  width: 100%;
 }
 .card6__img {
   border-radius: 30px 30px 0 0;
-  max-width: 314px;
-  width: 100%;
 }
 .card6__title {
   height: 237px;
@@ -538,6 +514,9 @@ html {
   padding-left: 48px;
   padding-right: 48px;
   box-sizing: border-box;
+  padding-bottom: 48px;
+  min-height: 250px;
+  height: 100%;
 }
 
 .minigames-card-img1 {
@@ -592,6 +571,30 @@ html {
   .card2 {
     z-index: 1;
   }
+  .card1__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card2__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card3__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card4__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card5__img {
+    max-width: 314px;
+    width: 100%;
+  }
+  .card6__img {
+    max-width: 314px;
+    width: 100%;
+  }
   .minigames {
     padding-left: calc(50% - 417px);
     padding-right: calc(50% - 417px);
@@ -602,10 +605,10 @@ html {
     width: 100%;
   }
   .minigames-card-content {
-    padding-top: 12px;
+    padding-top: 48px;
   }
   .minigames-card-content1 {
-    padding-top: 12px;
+    padding-top: 48px;
   }
   .minigames-card-content__h3 {
     font-size: 32px;
