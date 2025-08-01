@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a9556397341213e8d0dd7bda9c818b941b57ffcc
 let res = 1;
 let resUser = 1;
 let task = (Math.random() * 3) + 1;
@@ -51,3 +55,7 @@ if (res === resUser) {
             }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a9556397341213e8d0dd7bda9c818b941b57ffcc
