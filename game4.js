@@ -1,3 +1,4 @@
+function game4() {
 const quiz = [
            {
                question: "Какой цвет небо?",
@@ -20,15 +21,17 @@ let x = Number;
 let index = 0;
 function quizf() {  
 for (let index = 0; index < quiz.length; index++) {
-      x = Number(prompt(quiz[index]['question'], quiz[index]['options']));
+      
+      x = Number(prompt(quiz[index]['question'] + " " + quiz[index]['options']));
       if (x === Number(quiz[index]['correctAnswer'])) {
       correctAnswerUser++;   
       }      
 }
-return correctAnswerUser;
+let text = "Количество правильных ответов " + correctAnswerUser;
+return text;
 }
 alert(quizf(quiz));
-
+}
 
 
 

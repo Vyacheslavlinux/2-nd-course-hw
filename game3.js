@@ -1,3 +1,4 @@
+function game3() {
 let y = prompt('Введи текст, который будет перевернут');
 let arr = [];
 function revolt(y) {
@@ -5,5 +6,5 @@ function revolt(y) {
       return y;
 }
 alert(revolt(y));
-
+}
 
