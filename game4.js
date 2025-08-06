@@ -21,12 +21,16 @@ let x = Number;
 let index = 0;
 function quizf() {  
 for (let index = 0; index < quiz.length; index++) {
-      
       x = Number(prompt(quiz[index]['question'] + " " + quiz[index]['options']));
       if (x === Number(quiz[index]['correctAnswer'])) {
       correctAnswerUser++;   
-      }      
-}
+      } 
+      if (x === Number(1) || x === Number(2) || x === Number(3)) {} 
+      else {
+        alert(" номер введен вне диапазона или некорректно");
+        index--;
+      }  
+    }
 let text = "Количество правильных ответов " + correctAnswerUser;
 return text;
 }
