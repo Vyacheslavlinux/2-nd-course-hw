@@ -3,7 +3,7 @@ let y = prompt('Введи текст, который будет перевер�
 let arr = [];
 function revolt(y) {
       if (y === null) {
-      return ("ошибка ввода")
+      return ("Игра отменена")
       };
       y = y.split('').reverse().join('');
       return y;

@@ -27,8 +27,7 @@ for (let index = 0; index < quiz.length; index++) {
       } 
       if (x === Number(1) || x === Number(2) || x === Number(3)) {} 
       else {
-        alert(" номер введен вне диапазона или некорректно");
-        index--;
+        alert("Игра отменена");
       }  
     }
 let text = "Количество правильных ответов " + correctAnswerUser;
