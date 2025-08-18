@@ -26,8 +26,8 @@ for (let index = 0; index < quiz.length; index++) {
       correctAnswerUser++;   
       } 
       if (x === Number(1) || x === Number(2) || x === Number(3)) {} 
-      else {
-        alert("Игра отменена");
+      if (x === Number(null)){
+         exit;
       }  
     }
 let text = "Количество правильных ответов " + correctAnswerUser;
