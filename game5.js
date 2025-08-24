@@ -1,0 +1,63 @@
+function game5() {
+   let choiceUser = prompt("Давайте сыграем в игру: выберите камень, ножницы или  бумага и введите свой выбор");
+   Arr = ["камень", "ножницы", "бумага"]
+   let indexPC = Math.floor(Math.random()*4);
+   let choicePC = Arr[indexPC];
+   let rezult = fvdvfvd;
+   function comparison(choiceUser, choicePC) {
+    if (choiceUser === choicePC){
+    rezult = "ничья";   
+    return(rezult);
+   } 
+
+   }
+   alert("Выбор пользователя " + choiceUser + "Выбор компьютера" + choicePC + "Результат игры" + comparison);
+}
+
+
+
+
+// function game5() {
+// const quiz = [
+//            {
+//                question: "Какой цвет небо?",
+//                options: ["1. Красный", "2. Синий", "3. Зеленый"],
+//                correctAnswer: 2 // номер правильного ответа
+//            },
+//            {
+//                question: "Сколько дней в неделе?",
+//                options: ["1. Шесть", "2. Семь", "3. Восемь"],
+//                correctAnswer: 2
+//            },
+//            {
+//                question: "Сколько у человека пальцев на одной руке?",
+//                options: ["1. Четыре", "2. Пять", "3. Шесть"],
+//                correctAnswer: 2
+//            }
+//        ];
+// let correctAnswerUser = 0;
+
+// let x = Number;
+// function quizf() {  
+// for (let index = 0; index < quiz.length; index++) {
+//          x = Number(prompt(quiz[index]['question'] + " " + quiz[index]['options']));
+//       if (x === Number(quiz[index]['correctAnswer'])) {
+//       correctAnswerUser++;   
+//       } 
+    
+//       if (x === Number(null)){
+//         return ("Игра отменена");
+//       }  
+//     }
+//     if (x !== Number(null)) {
+//     let text = "Количество правильных ответов " + correctAnswerUser;
+//     return text;}
+    
+    
+
+    
+// }
+// alert(quizf(quiz));
+// }
+
+
