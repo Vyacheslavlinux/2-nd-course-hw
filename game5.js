@@ -1,11 +1,28 @@
 function game5() {
-   let choiceUser = prompt("Давайте сыграем в игру: выберите камень, ножницы или  бумага и введите свой выбор");
+   let choiceUser = 0;
+   let err = 0;
+   while (err === 0) {
+   choiceUser = prompt("Давайте сыграем в игру: выберите камень, ножницы или  бумага и введите свой выбор");
+   if (choiceUser === null) {return};
    choiceUser = choiceUser.toLowerCase();
+
+   if (choiceUser === "камень"||choiceUser === "ножницы"||choiceUser === "бумага"){
+      err = 1;
+   }
+   else{
+      alert("Некорректный ответ. Введите заново")
+   }
+  
+   }
+   
+   
    Arr = ["камень", "ножницы", "бумага"]
    let indexPC = Math.floor(Math.random()*3);
    let choicePC = Arr[indexPC];
    
    function comparison(choiceUser, choicePC) {
+   
+
    let rezult = "fvdvfvd";
    if (choiceUser === choicePC){
       rezult = "ничья";   
@@ -35,7 +52,7 @@ function game5() {
       {rezult = "поражение";
       return (rezult);}
    }
-   return ("Вы ввели некорректный ответ");
+     
    }
    alert(" Выбор пользователя " + choiceUser + " Выбор компьютера " + choicePC + " Результат игры " + comparison(choiceUser, choicePC));
 }

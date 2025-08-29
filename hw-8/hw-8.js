@@ -67,7 +67,7 @@ console.log(filter(people1, isMale));
 }
 
 delayForSecond1(function () {
-   console.log('Привет, Глеб!');
+   console.log('Привет, Иван!');
 })
 
 /* task5*/
