@@ -1,3 +1,4 @@
+function game2() {
 let res = 1;
 let resUser = 1;
 let task = (Math.random() * 3) + 1;
@@ -50,4 +51,4 @@ if (res === resUser) {
                   alert(`ответ неверный, правильный ответ ${res}`);
             }
 
-
+}
